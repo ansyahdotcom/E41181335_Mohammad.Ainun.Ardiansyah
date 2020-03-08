@@ -324,6 +324,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
+// karena menggunakan session,isi juga encryption key
 $config['encryption_key'] = 'wwwaksatacom';
 
 /*

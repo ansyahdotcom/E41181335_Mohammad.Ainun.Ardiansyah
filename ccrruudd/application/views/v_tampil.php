@@ -16,16 +16,23 @@
 		</tr>
 		<?php 
 		// $no = 1;
+		// menampilkan data
 		foreach($wisata as $wst){ 
 		?>
 		<tr>
+			<!-- menampilkan id wisata -->
 			<td><?php echo $wst->ID_WST ?></td>
+			<!-- menampilkan nama wisata -->
 			<td><?php echo $wst->NM_WST ?></td>
+			<!-- alamat wisata -->
 			<td><?php echo $wst->ALAMAT_WST ?></td>
+			<!-- no telepon wisata -->
 			<td><?php echo $wst->TLP_WST ?></td>
 			<td>
-			      <?php echo anchor('crud/edit/'.$wst->NM_WST,'Edit'); ?>
-                              <?php echo anchor('crud/hapus/'.$wst->NM_WST,'Hapus'); ?>
+				<!-- button edit -->
+			    <?php echo anchor('crud/edit/'.$wst->NM_WST,'Edit'); ?>
+				<!-- button hapus -->
+                <?php echo anchor('crud/hapus/'.$wst->NM_WST,'Hapus'); ?>
 			</td>
 		</tr>
 		<?php } ?>
