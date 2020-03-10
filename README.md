@@ -6,7 +6,6 @@ REST (Representational State Transfer), adalah suatu gaya arsitektur perangkat l
 * CodeIgniter 3.1.11+
 * Webserver seperti Xampp, Wampp, atau lainnya
 * Codeigniter dan library REST server yang diperlukan dapat diunduh di https://github.com/chriskacerguis/codeigniter-restserver untuk versi terbaru, versi yang digunakan disini adalah https://github.com/ardisaurus/ci-restserver.
-<br><br>
 #  
 Extract Codeigniter dan library REST server. Pindah ke htdocs pada direktori xampp lalu rename folder Codeigniter dan library REST server menjadi rest_ci. Masukan pada browser 
 <br>`<http://127.0.0.1/rest_ci/index.php/rest_server>`
