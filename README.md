@@ -18,6 +18,7 @@ Buat database baru dengan nama "kontak" :
 >   nama varchar(50) NOT NULL,
 >   nomor varchar(13) NOT NULL,
 >   PRIMARY KEY (id);
-
+I think you should use an
+`<addr>` element here instead.
 
 
