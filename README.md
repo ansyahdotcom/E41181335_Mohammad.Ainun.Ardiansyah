@@ -8,17 +8,13 @@ REST (Representational State Transfer), adalah suatu gaya arsitektur perangkat l
 * Codeigniter dan library REST server yang diperlukan dapat diunduh di https://github.com/chriskacerguis/codeigniter-restserver untuk versi terbaru, versi yang digunakan disini adalah https://github.com/ardisaurus/ci-restserver.
 <br><br> 
 Extract Codeigniter dan library REST server. Pindah ke htdocs pada direktori xampp lalu rename folder Codeigniter dan library REST server menjadi rest_ci. Masukan pada browser 
-`<http://127.0.0.1/rest_ci/index.php/rest_server>`
+<br>`<http://127.0.0.1/rest_ci/index.php/rest_server>`
 ## Konfigurasi database
 Buat database baru dengan nama "kontak" :
-`<CREATE DATABASE kontak;>`
-<br>Buat tabel baru dengan nama "telepon" dengan field id (int 11), nama (varchar 30), nomor (varchar 11)
-`<CREATE TABLE telepon (
-<br>  id int(11) NOT NULL,
-nama varchar(50) NOT NULL,
-nomor varchar(13) NOT NULL,
-PRIMARY KEY (id)>`
-I think you should use an
-`<addr>` element here instead.
-
-
+<br>`<CREATE DATABASE kontak;>`
+<br>Buat tabel baru dengan nama "telepon" dengan field id (int 11), nama (varchar 30), nomor (varchar 11).
+<br>`<CREATE TABLE telepon (
+<br>    id int(11) NOT NULL,
+<br>    nama varchar(50) NOT NULL,
+<br>    nomor varchar(13) NOT NULL,
+<br>    PRIMARY KEY (id)>`
