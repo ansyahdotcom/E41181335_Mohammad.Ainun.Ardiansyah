@@ -11,7 +11,7 @@ Extract Codeigniter dan library REST server. Pindah ke htdocs pada direktori xam
 > http://127.0.0.1/rest_ci/index.php/rest_server 
 ## Konfigurasi database
 Buat database baru dengan nama "kontak" :
-> CREATE DATABASE kontak;
+> CREATE DATABASE kontak; <
 <br>Buat tabel baru dengan nama "telepon" dengan field id (int 11), nama (varchar 30), nomor (varchar 11)
 > CREATE TABLE telepon (
 >   id int(11) NOT NULL,
