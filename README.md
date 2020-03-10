@@ -13,5 +13,4 @@ Extract Codeigniter dan library REST server. Pindah ke htdocs pada direktori xam
 Buat database baru dengan nama "kontak".
 <br>`CREATE DATABASE kontak;`
 <br>Buat tabel baru dengan nama "telepon" dengan field id (int 11), nama (varchar 30), nomor (varchar 11).
-<br> `CREATE TABLE telepon (id int(11) NOT NULL,`
-<br> `              nama varchar(50) NOT NULL, nomor varchar(13) NOT NULL, PRIMARY KEY (id);`
+<br> `CREATE TABLE telepon (id int(11) NOT NULL, nama varchar(50) NOT NULL, nomor varchar(13) NOT NULL, PRIMARY KEY (id);`
