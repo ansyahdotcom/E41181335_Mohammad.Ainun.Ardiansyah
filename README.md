@@ -50,4 +50,34 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 ); </code> </pre>
+## GET
+Metode GET menyediakan akses baca pada sumber daya yang disediakan oleh REST API. Untuk membaca data dari database dapat dilakukan dengan active record yang telah disediakan CodeIgniter. Fungsi GET memeriksa terlebih dahulu apakah terdapat property id pada address bar sehingga data yang ditampilkan dapat di seleksi berdasarkan id atau ditampilkan semua.
+<br> Buat file php baru di di rest_ci/application/controller dengan nama kontak.php.
+<pre> <code>
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+require APPPATH . '/libraries/REST_Controller.php';
+use Restserver\Libraries\REST_Controller;
+
+class Kontak extends REST_Controller {
+
+    function __construct($config = 'rest') {
+        parent::__construct($config);
+        $this->load->database();
+    }
+
+    //Menampilkan data kontak
+    function index_get() {
+        $id = $this->get('id');
+        if ($id == '') {
+            $kontak = $this->db->get('telepon')->result();
+        } else {
+            $this->db->where('id', $id);
+            $kontak = $this->db->get('telepon')->result();
+        }
+        $this->response($kontak, 200);
+    }
+
+    //Masukan function selanjutnya disini
+} </code> </pre>
 
