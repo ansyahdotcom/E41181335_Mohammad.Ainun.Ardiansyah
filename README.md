@@ -18,7 +18,8 @@ Buat database baru dengan nama "kontak".
 <br>      nomor varchar(13) NOT NULL, 
 <br>      PRIMARY KEY (id); </pre>
 Masukan beberapa data
-<pre> INSERT INTO telepon (id, nama, nomor) VALUES 
+<pre> <code> INSERT INTO telepon (id, nama, nomor) VALUES 
 <br>      (1, 'Mohammad', '08576666762'), 
 <br>      (2, 'Ainun', '08576666770'),
-<br>      (3, 'Ardiansyah', '08576666765'); </pre>
+<br>      (3, 'Ardiansyah', '08576666765'); </code> </pre>
+Atur databse pada rest_ci/application/config/database.php 
