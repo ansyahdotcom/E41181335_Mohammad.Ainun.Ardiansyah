@@ -16,7 +16,7 @@ Buat database baru dengan nama "kontak".
 <pre> <code> CREATE TABLE telepon (id int(3) NOT NULL, 
 <br>      nama varchar(50) NOT NULL, 
 <br>      nomor varchar(13) NOT NULL, 
-<br>      PRIMARY KEY (id); <code> </pre>
+<br>      PRIMARY KEY (id); </code> </pre>
 Masukan beberapa data
 <pre> <code> INSERT INTO telepon (id, nama, nomor) VALUES 
 <br>      (1, 'Mohammad', '08576666762'), 
