@@ -24,7 +24,6 @@ Masukan beberapa data
 <br>      (3, 'Ardiansyah', '08576666765'); </code> </pre>
 Atur databse pada rest_ci/application/config/database.php 
 <pre> <code>
-//<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
