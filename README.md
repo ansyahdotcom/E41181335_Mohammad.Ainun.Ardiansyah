@@ -121,3 +121,22 @@ Metode PUT digunakan untuk memperbarui data yang telah ada di server REST API.
         }
     }
 </code> </pre>
+buka Postman, pilih metode PUT, masukan http://127.0.0.1/rest_ci/index.php/kontak , klik "Body", pilih x-www-form-urlencoded, masukan key id dan value id yang akan diubah, lalu klik "Send".
+
+## DELETE
+Metode DELETE digunakan untuk menghapus data yang telah ada di server REST API.
+<pre> <code>
+// Menghapus data
+    function index_delete() {
+        $id = $this->delete('id');
+        // hapus berdasar id
+        $this->db->where('id', $id);
+        $delete = $this->db->delete('telepon');
+        if ($delete) {
+            $this->response(array('status' => 'success'), 201);
+        } else {
+            $this->response(array('status' => 'fail', 502));
+        }
+    }
+</code> </pre>
+buka Postman, pilih metode DELETE, masukan http://127.0.0.1/rest_ci/index.php/kontak , klik "Body", pilih x-www-form-urlencoded, masukan key id dan value id yang akan dihapus, lalu klik "Send".
