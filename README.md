@@ -11,12 +11,12 @@ Extract CodeIgniter dan library REST server. Pindah ke htdocs pada direktori xam
 <br>`http://127.0.0.1/rest_ci/index.php/rest_server`
 ## Konfigurasi database
 Buat database baru dengan nama "kontak".
-<br>`CREATE DATABASE kontak;`
+<br> <code> CREATE DATABASE kontak; </code>
 <br>Buat tabel baru dengan nama "telepon" dengan field id (int 3), nama (varchar 50), nomor (varchar 13).
-<pre> CREATE TABLE telepon (id int(3) NOT NULL, 
+<pre> <code> CREATE TABLE telepon (id int(3) NOT NULL, 
 <br>      nama varchar(50) NOT NULL, 
 <br>      nomor varchar(13) NOT NULL, 
-<br>      PRIMARY KEY (id); </pre>
+<br>      PRIMARY KEY (id); <code> </pre>
 Masukan beberapa data
 <pre> <code> INSERT INTO telepon (id, nama, nomor) VALUES 
 <br>      (1, 'Mohammad', '08576666762'), 
