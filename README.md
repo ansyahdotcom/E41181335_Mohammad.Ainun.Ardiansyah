@@ -61,8 +61,10 @@ use Restserver\Libraries\REST_Controller;
 
 class Kontak extends REST_Controller {
 
+    // constructor
     function __construct($config = 'rest') {
         parent::__construct($config);
+        // atur untuk load database
         $this->load->database();
     }
 
@@ -77,7 +79,22 @@ class Kontak extends REST_Controller {
         }
         $this->response($kontak, 200);
     }
-
-    //Masukan function selanjutnya disini
 } </code> </pre>
-
+Buka Postman, Pilih metode GET, masukan http://127.0.0.1/rest_ci/index.php/kontak lalu klik "Send".
+## POST
+Metode POST digunakan untuk mengirimkan data baru dari client ke server REST API. Sebagai contohnya digunakan untuk menambahkan kontak baru yang terdiri dari id, nama, dan nomor.
+<pre> <code>
+//Mengirim atau menambah data kontak baru
+    function index_post() {
+        $data = array(
+                    'id'           => $this->post('id'),
+                    'nama'          => $this->post('nama'),
+                    'nomor'    => $this->post('nomor'));
+        $insert = $this->db->insert('telepon', $data);
+        if ($insert) {
+            $this->response($data, 200);
+        } else {
+            $this->response(array('status' => 'fail', 502));
+        }
+    }
+</code> </pre>
