@@ -13,9 +13,12 @@ Extract CodeIgniter dan library REST server. Pindah ke htdocs pada direktori xam
 Buat database baru dengan nama "kontak".
 <br>`CREATE DATABASE kontak;`
 <br>Buat tabel baru dengan nama "telepon" dengan field id (int 3), nama (varchar 50), nomor (varchar 13).
-<br> `CREATE TABLE telepon (id int(3) NOT NULL, nama varchar(50) NOT NULL, nomor varchar(13) NOT NULL, PRIMARY KEY (id);`
+<br> <pre> CREATE TABLE telepon (id int(3) NOT NULL, 
+<br>      nama varchar(50) NOT NULL, 
+<br>      nomor varchar(13) NOT NULL, 
+<br>      PRIMARY KEY (id); </pre>
 <br> Masukan beberapa data
-<br> <pre> `INSERT INTO telepon (id, nama, nomor) VALUES `
+<br> <pre> INSERT INTO telepon (id, nama, nomor) VALUES 
 <br>      (1, 'Mohammad', '08576666762'), 
 <br>      (2, 'Ainun', '08576666770'),
 <br>      (3, 'Ardiansyah', '08576666765'); </pre>
