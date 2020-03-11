@@ -98,3 +98,26 @@ Metode POST digunakan untuk mengirimkan data baru dari client ke server REST API
         }
     }
 </code> </pre>
+buka Postman, pilih metode POST, masukan http://127.0.0.1/rest_ci/index.php/kontak , klik "Body", pilih x-www-form-urlencoded, masukan key dan value (id, nama, nomor), lalu klik "Send". Lakukan metode GET untuk melihat data terbaru.
+
+## PUT
+Metode PUT digunakan untuk memperbarui data yang telah ada di server REST API.
+<pre> <code>
+// Mengubah data
+    function index_put() {
+        $id = $this->put('id');
+        // jadikan array
+        $data = array(
+                    'id'       => $this->put('id'),
+                    'nama'          => $this->put('nama'),
+                    'nomor'    => $this->put('nomor'));
+        // Ubah berdasar id 
+        $this->db->where('id', $id);
+        $update = $this->db->update('telepon', $data);
+        if ($update) {
+            $this->response($data, 200);
+        } else {
+            $this->response(array('status' => 'fail', 502));
+        }
+    }
+</code> </pre>
