@@ -23,15 +23,15 @@ Masukan beberapa data
 <br>      (2, 'Ainun', '08576666770'),
 <br>      (3, 'Ardiansyah', '08576666765'); </code> </pre>
 Atur databse pada rest_ci/application/config/database.php 
-<br> <pre> <code>
-<?php
+<pre> <code>
+//<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
 // arahkan ke database kontak
 $db['default'] = array(
-	'dsn'	=> '',
+	'dsn' => '',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
@@ -50,5 +50,5 @@ $db['default'] = array(
 	'stricton' => FALSE,
 	'failover' => array(),
 	'save_queries' => TRUE
-); ?> </code> </pre>
+); </code> </pre>
 
